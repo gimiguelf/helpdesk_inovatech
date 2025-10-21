@@ -1,0 +1,18 @@
+
+Diagrama (simplificado):
+
+User
+- id
+- name
+- email
+- passwordHash
+- role
+
+Ticket
+- id
+- title
+- description
+- status (Aberto, Em Andamento, Resolvido)
+- priority (Baixa, Média, Alta)
+- createdBy -> User
+- assignedTo -> User

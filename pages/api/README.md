@@ -1,0 +1,1 @@
+API route compatibility helpers are in app/api. Use Next.js 14+ to serve app/api routes.
