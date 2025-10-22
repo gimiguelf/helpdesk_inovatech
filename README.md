@@ -4,7 +4,6 @@
 Descrição  
 Aplicação MVP de um Sistema de Gestão de Manutenção (SGM) / Help Desk para controle de equipamentos e ordens de serviço. Implementação em arquitetura MVC com Next.js (App Router), MongoDB (Mongoose), JWT e bcrypt.
 
-Visão resumida
 - Centralizar informações sobre equipamentos e manutenções.
 - Agendar e gerenciar ordens de serviço (preventiva / corretiva).
 - Perfis: employee (funcionário), tech (técnico), manager/admin.
@@ -25,20 +24,7 @@ Estrutura do projeto (resumida)
 - /app/api - handlers API (autenticação, equipamentos, os).
 - /lib - conexão com MongoDB e utilitários (jwt, auth middleware).
 - /scripts/seed.js - cria usuários demo e dados de exemplo.
-
-Instalação e execução
-1. Copie `.env.example` para `.env.local` e preencha:
-   MONGODB_URI=mongodb://localhost:27017/sgm_helpdesk
-   JWT_SECRET=um_segredo_muito_secreto
-2. npm install
-3. npm run seed (opcional — cria usuários demo)
-4. npm run dev
-5. Acesse http://localhost:3000
-
-Usuários demo (seed)
-- Técnico: tech@inovatech.com / password123 (role: tech)  
-- Funcionário: employee@inovatech.com / password123 (role: employee)
-
+  
 Figma (protótipo)
 - https://www.figma.com/design/UliZXkWac8XvEHTQs5TxIQ/Untitled?node-id=0-1&t=QYnmQ0cNZy0mSkpq-1
 
@@ -129,16 +115,16 @@ sequenceDiagram
     end
 ```
 
-Análise de riscos (resumo)
+Análise de riscos 
 - Exposição de credenciais/secretos -> usar .env e rotacionar secrets.
 - Validação insuficiente de entrada -> sanitizar e validar no servidor.
 - Controle de acesso -> checar roles em cada endpoint.
 - Backup e integridade do DB -> rotinas de backup em produção.
 
-Próximos passos recomendados
-- Implementar testes automatizados (unit + integração).
-- Melhorar controles de permissão (RBAC mais granular).
-- Implementar paginação e notificações em tempo real (websockets).
+Próximos passos 
+- Implementar testes automatizados.
+- Melhorar controles de permissão.
+- Implementar paginação e notificações em tempo real.
 - Revisão de UX com base no Figma.
 
 Referências
