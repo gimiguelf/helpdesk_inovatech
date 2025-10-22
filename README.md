@@ -27,6 +27,7 @@ Estrutura do projeto (resumida)
   
 Figma (protótipo)
 -https://www.figma.com/design/UliZXkWac8XvEHTQs5TxIQ/Untitled?node-id=0-1&t=mhs2ikkpmLueyueW-1
+
 Diagramação (Mermaid)
 
 1) Diagrama de Classes
